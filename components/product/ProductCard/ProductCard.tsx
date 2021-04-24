@@ -33,11 +33,11 @@ const ProductCard: FC<Props> = ({
           </div>
           {product?.images && (
             <Image
-              quality="85"
+              quality="100"
               src={product.images[0].url || placeholderImg}
               alt={product.name || 'Product Image'}
-              height={320}
-              width={320}
+              height={300}
+              width={300}
               layout="fixed"
               {...imgProps}
             />
@@ -57,13 +57,13 @@ const ProductCard: FC<Props> = ({
                 {product.price.currencyCode}
               </span>
             </div>
-            {process.env.COMMERCE_WISHLIST_ENABLED && (
+            {/* {process.env.COMMERCE_WISHLIST_ENABLED && (
               <WishlistButton
                 className={s.wishlistButton}
                 productId={product.id}
                 variant={product.variants[0] as any}
               />
-            )}
+            )} */}
           </div>
           <div className={s.imageContainer}>
             {product?.images && (

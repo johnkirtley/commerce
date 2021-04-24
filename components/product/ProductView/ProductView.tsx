@@ -9,7 +9,7 @@ import type { Product } from '@commerce/types'
 import usePrice from '@framework/product/use-price'
 import { useAddItem } from '@framework/cart'
 import { getVariant, SelectedOptions } from '../helpers'
-import WishlistButton from '@components/wishlist/WishlistButton'
+// import WishlistButton from '@components/wishlist/WishlistButton'
 
 interface Props {
   children?: any
@@ -66,8 +66,8 @@ const ProductView: FC<Props> = ({ product }) => {
           images: [
             {
               url: product.images[0]?.url!,
-              width: 800,
-              height: 600,
+              width: 600,
+              height: 300,
               alt: product.name,
             },
           ],
@@ -92,10 +92,10 @@ const ProductView: FC<Props> = ({ product }) => {
                     className={s.img}
                     src={image.url!}
                     alt={image.alt || 'Product Image'}
-                    width={1050}
-                    height={1050}
+                    width={800}
+                    height={800}
                     priority={i === 0}
-                    quality="85"
+                    quality="100"
                   />
                 </div>
               ))}
@@ -151,13 +151,13 @@ const ProductView: FC<Props> = ({ product }) => {
             </Button>
           </div>
         </div>
-        {process.env.COMMERCE_WISHLIST_ENABLED && (
+        {/* {process.env.COMMERCE_WISHLIST_ENABLED && (
           <WishlistButton
             className={s.wishlistButton}
             productId={product.id}
             variant={product.variants[0]! as any}
           />
-        )}
+        )} */}
       </div>
     </Container>
   )

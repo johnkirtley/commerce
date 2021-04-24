@@ -1,20 +1,20 @@
 {
-  "title": "ACME Storefront | Powered by Next.js Commerce",
-  "titleTemplate": "%s - ACME Storefront",
-  "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+  "title": "Tidy Home | Home Organization",
+  "titleTemplate": "%s - Tidy Home",
+  "description": "Tidy Home Home Organization",
   "openGraph": {
-    "title": "ACME Storefront | Powered by Next.js Commerce",
-    "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+    "title": "Tidy Home | Home Organization",
+    "description": "Tidy Home Home Organization",
     "type": "website",
     "locale": "en_IE",
-    "url": "https://nextjs.org/commerce",
-    "site_name": "Next.js Commerce",
+    "url": "https://tidyhomesupplies.com",
+    "site_name": "Tidy Home",
     "images": [
       {
-        "url": "/card.png",
+        "url": "https://i.imgur.com/v1ui169.png",
         "width": 800,
         "height": 600,
-        "alt": "Next.js Commerce"
+        "alt": "Tidy Home"
       }
     ]
   },
